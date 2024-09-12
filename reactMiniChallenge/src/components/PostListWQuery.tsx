@@ -21,16 +21,12 @@ const PostListWQuery = () => {
             queryFn: fetchPosts
         });
 
-
-
   return (
     <>
         {error ? <p>{error.message}:</p> :null }
         {posts?.map(post =>(
             <li key={post.id}>{post.title}</li>
         ))}
-
-
 
     </>
   )
